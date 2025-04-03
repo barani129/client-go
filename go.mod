@@ -1,4 +1,4 @@
-module kubevirt.io/client-go
+module github.com/barani129/client-go
 
 go 1.22.0
 
@@ -25,8 +25,11 @@ require (
 	k8s.io/kube-openapi v0.31.0
 	k8s.io/utils v0.0.0-20240711033017-18e509b52bc8
 	kubevirt.io/api v0.0.0-20250403002518-81e45638ad2d
+	kubevirt.io/client-go v0.0.0-00010101000000-000000000000
 	kubevirt.io/containerized-data-importer-api v1.60.3-0.20241105012228-50fbed985de9
 )
+
+replace kubevirt.io/client-go => ./
 
 require (
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect

@@ -39,7 +39,6 @@ import (
 	v1alpha12 "k8s.io/client-go/kubernetes/typed/certificates/v1alpha1"
 	v1beta14 "k8s.io/client-go/kubernetes/typed/certificates/v1beta1"
 	v110 "k8s.io/client-go/kubernetes/typed/coordination/v1"
-	v1alpha13 "k8s.io/client-go/kubernetes/typed/coordination/v1alpha1"
 	v1beta15 "k8s.io/client-go/kubernetes/typed/coordination/v1beta1"
 	v111 "k8s.io/client-go/kubernetes/typed/core/v1"
 	v112 "k8s.io/client-go/kubernetes/typed/discovery/v1"
@@ -656,12 +655,6 @@ func (_m *MockKubevirtClient) CertificatesV1alpha1() v1alpha12.CertificatesV1alp
 
 func (_mr *_MockKubevirtClientRecorder) CertificatesV1alpha1() *gomock.Call {
 	return _mr.mock.ctrl.RecordCall(_mr.mock, "CertificatesV1alpha1")
-}
-
-func (_m *MockKubevirtClient) CoordinationV1alpha1() v1alpha13.CoordinationV1alpha1Interface {
-	ret := _m.ctrl.Call(_m, "CoordinationV1alpha1")
-	ret0, _ := ret[0].(v1alpha13.CoordinationV1alpha1Interface)
-	return ret0
 }
 
 func (_mr *_MockKubevirtClientRecorder) CoordinationV1alpha1() *gomock.Call {
